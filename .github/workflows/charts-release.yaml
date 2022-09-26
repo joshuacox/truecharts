@@ -73,7 +73,7 @@ jobs:
           steps.collect-changes.outputs.changesDetectedAfterTag == 'true'
         with:
           fetch-depth: 1
-          repository: truecharts/website
+          repository: joshuacox/truechartswebsite
           token: ${{ secrets.BOT_TOKEN }}
           path: website
 
@@ -144,7 +144,7 @@ jobs:
           steps.collect-changes.outputs.changesDetectedAfterTag == 'true'
         with:
           fetch-depth: 1
-          repository: truecharts/catalog
+          repository: joshuacox/truechartscatalog
           token: ${{ secrets.BOT_TOKEN }}
           ref: staging
           path: catalog
@@ -223,7 +223,7 @@ jobs:
         uses: helm/chart-releaser-action@a3454e46a6f5ac4811069a381e646961dda2e1bf # tag=v1.4.0
         with:
           charts_dir: charts/*
-          charts_repo_url: https://charts.truecharts.org
+          charts_repo_url: https://charts.oltorf.net
         env:
           CR_TOKEN: "${{ secrets.BOT_TOKEN }}"
           CR_SKIP_EXISTING: "true"
