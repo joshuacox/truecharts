@@ -1,4 +1,4 @@
-# TrueCharts fork
+# TrueCharts forky
 
 **Community Chart Catalog for TrueNAS SCALE**
 
