@@ -6,7 +6,7 @@ traefikTrain="stable"
 get_latest_release() {
     # Get latest release from GitHub api
     curl --silent \
-         --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+         --header 'authorization: Bearer ${{ secrets.BOT_TOKEN }}' \
          --url "https://api.github.com/repos/$1/releases/latest" |
     # Get tag line
     grep '"tag_name":' |
